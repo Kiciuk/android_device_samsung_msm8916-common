@@ -688,8 +688,8 @@ service irsc_util /system/bin/irsc_util "/etc/sec_config"
 service rmt_storage /system/bin/rmt_storage
     class core
     user root
-    group system wakelock
-    disabled
+    group system net_raw
+   # disabled
 
 on property:wc_transport.start_hci=true
     start start_hci_filter
