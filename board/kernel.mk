@@ -1,6 +1,7 @@
 # Kernel
 BOARD_KERNEL_CMDLINE += \
-	console=null \
+	# maybe fix lacking console? 
+	console=tty0 \
 	androidboot.hardware=qcom \
 	user_debug=23 \
 	msm_rtb.filter=0x3F \
